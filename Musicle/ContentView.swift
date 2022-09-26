@@ -74,7 +74,7 @@ struct AlbumArt : View {
                     Text(album.name).foregroundColor(.white)
                 }.frame(height: 60, alignment: .center)
             }
-        }).frame(width: 170, height: 200, alignment: .center).clipped().cornerRadius(10).shadow(radius: 10).padding(20)
+        }).frame(width: 170, height: 200, alignment: .center).clipped().cornerRadius(10).shadow(radius: 11).padding(20)
     }
 }
 

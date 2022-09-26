@@ -11,14 +11,27 @@
 		C6E8737528E12286003E625D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E8737428E12286003E625D /* ContentView.swift */; };
 		C6E8737728E12288003E625D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6E8737628E12288003E625D /* Assets.xcassets */; };
 		C6E8737A28E12288003E625D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6E8737928E12288003E625D /* Preview Assets.xcassets */; };
+		C6E8738128E12288003E625D /* BlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E8738028E12288003E625D /* BlurEffect.swift */; };
+		C6E8738328E134CF003E625D /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E8738228E134CF003E625D /* PlayerView.swift */; };
+		C6E8738528E13CFE003E625D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C6E8738428E13CFE003E625D /* GoogleService-Info.plist */; };
+		C6E8738728E14EAA003E625D /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E8738628E14EAA003E625D /* Data.swift */; };
+		DE335E583598F5C4EA6E8575 /* Pods_Musicle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCDFB77CA99F725C4A747F2 /* Pods_Musicle.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DCDFB77CA99F725C4A747F2 /* Pods_Musicle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Musicle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6E8736F28E12286003E625D /* Musicle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Musicle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6E8737228E12286003E625D /* MusicleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicleApp.swift; sourceTree = "<group>"; };
 		C6E8737428E12286003E625D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C6E8737628E12288003E625D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6E8737928E12288003E625D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C6E8738028E12288003E625D /* BlurEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurEffect.swift; sourceTree = "<group>"; };
+		C6E8738228E134CF003E625D /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		C6E8738428E13CFE003E625D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C6E8738628E14EAA003E625D /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		C6E8738828E162CA003E625D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CED287EED6F6E143C035635B /* Pods-Musicle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Musicle.release.xcconfig"; path = "Target Support Files/Pods-Musicle/Pods-Musicle.release.xcconfig"; sourceTree = "<group>"; };
+		E4C88A35C736B22C0E5F7ADD /* Pods-Musicle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Musicle.debug.xcconfig"; path = "Target Support Files/Pods-Musicle/Pods-Musicle.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE335E583598F5C4EA6E8575 /* Pods_Musicle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		542CB33C1047E0BE4C895366 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0DCDFB77CA99F725C4A747F2 /* Pods_Musicle.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9137D6A99728145B5DCE75E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4C88A35C736B22C0E5F7ADD /* Pods-Musicle.debug.xcconfig */,
+				CED287EED6F6E143C035635B /* Pods-Musicle.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C6E8736628E12286003E625D = {
 			isa = PBXGroup;
 			children = (
 				C6E8737128E12286003E625D /* Musicle */,
 				C6E8737028E12286003E625D /* Products */,
+				B9137D6A99728145B5DCE75E /* Pods */,
+				542CB33C1047E0BE4C895366 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +84,13 @@
 		C6E8737128E12286003E625D /* Musicle */ = {
 			isa = PBXGroup;
 			children = (
+				C6E8738828E162CA003E625D /* Info.plist */,
+				C6E8738428E13CFE003E625D /* GoogleService-Info.plist */,
 				C6E8737228E12286003E625D /* MusicleApp.swift */,
 				C6E8737428E12286003E625D /* ContentView.swift */,
+				C6E8738628E14EAA003E625D /* Data.swift */,
+				C6E8738228E134CF003E625D /* PlayerView.swift */,
+				C6E8738028E12288003E625D /* BlurEffect.swift */,
 				C6E8737628E12288003E625D /* Assets.xcassets */,
 				C6E8737828E12288003E625D /* Preview Content */,
 			);
@@ -74,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6E8737D28E12288003E625D /* Build configuration list for PBXNativeTarget "Musicle" */;
 			buildPhases = (
+				6FCEA8DB2F51F203D1258350 /* [CP] Check Pods Manifest.lock */,
 				C6E8736B28E12286003E625D /* Sources */,
 				C6E8736C28E12286003E625D /* Frameworks */,
 				C6E8736D28E12286003E625D /* Resources */,
+				1C555883CC4BADDCCC788F58 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,18 +167,64 @@
 			files = (
 				C6E8737A28E12288003E625D /* Preview Assets.xcassets in Resources */,
 				C6E8737728E12288003E625D /* Assets.xcassets in Resources */,
+				C6E8738528E13CFE003E625D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C555883CC4BADDCCC788F58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Musicle/Pods-Musicle-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Musicle/Pods-Musicle-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Musicle/Pods-Musicle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FCEA8DB2F51F203D1258350 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Musicle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C6E8736B28E12286003E625D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6E8738128E12288003E625D /* BlurEffect.swift in Sources */,
+				C6E8738728E14EAA003E625D /* Data.swift in Sources */,
 				C6E8737528E12286003E625D /* ContentView.swift in Sources */,
 				C6E8737328E12286003E625D /* MusicleApp.swift in Sources */,
+				C6E8738328E134CF003E625D /* PlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +347,7 @@
 		};
 		C6E8737E28E12288003E625D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4C88A35C736B22C0E5F7ADD /* Pods-Musicle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -269,6 +356,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Musicle/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Musicle/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -289,6 +377,7 @@
 		};
 		C6E8737F28E12288003E625D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CED287EED6F6E143C035635B /* Pods-Musicle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -297,6 +386,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Musicle/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Musicle/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
